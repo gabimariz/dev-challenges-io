@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #333;
+  --white: #fff;
+  --gray: #bdbdbd;
+  --gray-2: #4f4f4f;
+  --jade: #00a86b;
+  --jade-dark: #008656;
+  --jade-light: #00d286;
+}
+
+body {
+  background-color: var(--black);
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+  color: var(--white);
+}
+
+header h2{
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.56rem;
+  letter-spacing: -0.08rem;
+  padding: 2.5rem 4.8rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  letter-spacing: -0.035rem;
+  gap: 7.4rem;
+
+  margin-top: 8.5rem;
+}
+
+section img {
+  width: 33.7rem;
+  height: 27.9rem;
+}
+
+section header {
+  flex-direction: column;
+}
+
+section h1 {
+  max-width: 36.6rem;
+  max-height: 11.8rem;
+
+  font-weight: 700;
+  font-size: 3em;
+
+  line-height: 5.9rem;
+  margin-bottom: 2.25rem;
+}
+
+section p {
+  max-width: 23.8rem;
+  max-height: 6.75rem;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 2.2rem;
+  color: var(--gray-2);
+}
+
+section button {
+  width: 13.5rem;
+  height: 4.25rem;
+  background-color: var(--jade-dark);
+  color: var(--white);
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 4rem;
+
+  cursor: pointer;
+}
+
+section button:hover {
+  background-color: var(--jade-light);
+}
+
+footer {
+  padding: 2rem;
+  color: var(--gray);
+  text-align: center;
+
+  margin-top: 8.4rem;
+}
+
+footer a {
+  color: var(--jade);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--jade-light);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  header h2{
+    padding: 1.25rem 1.5rem;
+  }
+
+  section {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  section img {
+    width: 17.9rem;
+    height: 14.8rem;
+  }
+}
